@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./style.css" type="text/css"> 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="interface">
+        <div class="container">
+            <div class="header">
+                    <div class="clear">
+                        <i class="fa fa-refresh"></i> 
+                    </div>
+                    <div id="date"></div>
+                <h1>Welcome to the Tip app</h1>
+            </div>
+
+            <form>
+                    <div class="row">
+                      <div class="col">
+                        <input type="number" class="form-control" name="input_bill" id="bill" placeholder="Amount to be paid" step="0.01">
+                      </div>
+                      <div class="col">
+                        <input  class="form-control"  name="input_tip" id="tip" placeholder="percentage as tip %" " type="number" min="0" max="100" step="0.5">
+                      </div>
+                    </div>
+                    <div class="alert alert-danger" role="alert" id="results">
+                            <!-- intentionally left blank to leave room for answer, see output in google  -->
+                    </div>
+                    <div class="alert alert-warning" role="alert" id="tot_results">
+                            <!-- intentionally left blank to leave room for answer, see output in google  -->
+                    </div>
+   
+                   <button type="button" class="btn btn-primary" onclick="tip_calculator()">Calculate Tip</button>
+            </form>
+        </div>
+    </section>
+    <script src="./index.js"></script> 
+</body>
+</html>
